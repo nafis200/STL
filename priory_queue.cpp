@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+struct cmp
+{
+     bool operator()(int a, int b){
+        return a * a < b * b;
+     }
+};
+
+
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
@@ -22,5 +30,14 @@ int main() {
         p1.pop();
     }
 
+  
+    priority_queue<int,vector<int>,cmp> customq;
+
+    customq.push(4);
+    customq.push(2);
+    customq.push(3);
+
+    cout << customq.top() << "\n";
+  
     return 0;
 }
