@@ -10,4 +10,5 @@ int main(){
     p1 = make_pair(0,3);
     p2= make_pair(1,5);
     swap(p1,p2);
+    pair<int,int>points[10];
 }
