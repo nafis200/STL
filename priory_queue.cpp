@@ -19,16 +19,16 @@ int main() {
 
     priority_queue<int, vector<int>, greater<int>> p1(v.begin(), v.end());
 
-    while (!p.empty()) {
-        cout << p.top() << " ";
-        p.pop();
-    }
-    cout << "\n";
+    // while (!p.empty()) {
+    //     cout << p.top() << " ";
+    //     p.pop();
+    // }
+    // cout << "\n";
 
-    while (!p1.empty()) {
-        cout << p1.top() << " ";
-        p1.pop();
-    }
+    // while (!p1.empty()) {
+    //     cout << p1.top() << " ";
+    //     p1.pop();
+    // }
 
   
     priority_queue<int,vector<int>,cmp> customq;
